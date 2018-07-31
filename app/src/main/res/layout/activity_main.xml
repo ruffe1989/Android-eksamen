@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="no.usn.kandidatnr1.eksamenapplikasjonsutvikling2018.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:id="@+id/mainBilde"
+        android:layout_margin="5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mainTittel"
+        android:layout_below="@+id/mainBilde"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:text="@string/main_tittel"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        />
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/gridMain"
+    android:layout_below="@id/mainTittel"
+    android:columnCount="2"
+    >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/finnReise"
+            android:text="Finn Reise"
+            android:layout_alignParentEnd="true"
+            android:padding="20dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mineTurer"
+            android:text="Mine turer"
+            android:padding="20dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/regSjåfør"
+        android:text="Bli sjåfør"
+        android:padding="20dp"
+        android:layout_below="@id/finnReise"
+        android:layout_alignParentEnd="true"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/regtur"
+        android:text="Registrer reise"
+        android:padding="20dp"
+        android:layout_below="@id/finnReise"
+        />
+</RelativeLayout>
+
+
+</RelativeLayout>

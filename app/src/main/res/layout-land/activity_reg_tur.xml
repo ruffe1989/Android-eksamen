@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="no.usn.kandidatnr1.eksamenapplikasjonsutvikling2018.RegTurActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/reisebilde"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridReise"
+        android:layout_below="@+id/reisebilde"
+        android:columnCount="5"
+        >
+    <TextView
+        android:id="@+id/datoTekst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dato:"
+        />
+
+    <EditText
+        android:id="@+id/nyDato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="6"
+        android:clickable="true"
+        android:hint="Velg dato"
+        android:focusable="true"
+        />
+
+    <TextView
+        android:id="@+id/avreise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Avreise:"
+         />
+
+    <EditText
+        android:id="@+id/avreiseTekst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="14"
+        android:inputType="time"
+        android:hint="Velg avreise tidspunkt"
+        android:clickable="false"
+
+
+         />
+
+        <TextView
+            android:id="@+id/ankomst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ankomst:"
+            />
+
+        <EditText
+            android:id="@+id/ankomstTekst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="6"
+            android:hint="Velg ca ankomst tidspunkt"
+            android:inputType="time"
+            android:clickable="false"
+
+            />
+
+        <TextView
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Startsted:"
+            />
+
+        <EditText
+            android:id="@+id/startTekst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="8"
+
+            android:inputType="text" />
+        <TextView
+            android:id="@+id/slutt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Destinasjon:"
+            />
+
+        <EditText
+            android:id="@+id/sluttTekst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:inputType="text" />
+        <Button
+            android:id="@+id/visKart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Vis reise"
+            android:layout_gravity="fill_horizontal"
+
+            />
+        <TextView
+            android:id="@+id/stopp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kjente stopp:"
+            />
+
+        <EditText
+            android:id="@+id/stoppTekst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="14"
+            android:inputType="text" />
+        <TextView
+        android:id="@+id/ledig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Antall ledig:"
+        />
+
+        <EditText
+            android:id="@+id/ledigTekst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="14"
+            android:hint="antall ledige plasser"
+            android:inputType="number"
+            />
+        <TextView
+            android:id="@+id/kjøretøy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Info om kjøretøy:"
+
+            />
+
+        <Button
+            android:id="@+id/btnKjøretøy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Legg inn"
+            android:layout_gravity="fill_horizontal"
+            />
+    </GridLayout>
+    <Button
+        android:id="@+id/registrerTur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Registrer tur"
+
+        />
+</RelativeLayout>

@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="no.usn.kandidatnr1.eksamenapplikasjonsutvikling2018.InfoTurActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toppTekst"
+        android:text="Informasjon om reisen"
+        style="@style/TextAppearance.AppCompat.Headline"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reisen"
+        android:text="Reisen:"
+        style="@style/TextAppearance.AppCompat.Subhead"
+        android:layout_below="@+id/toppTekst"
+        />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/reiseLayout"
+            android:layout_below="@+id/reisen"
+            android:paddingBottom="6dp">
+
+            <TextView
+                android:id="@+id/dato"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:text="Dato" />
+            <Button
+                android:id="@+id/visKart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="Vis kart" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dato"
+                android:columnCount="4"
+                android:rowCount="3">
+
+                <TextView
+                    android:id="@+id/fra"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="Fra:" />
+
+                <TextView
+                    android:id="@+id/fraInfo"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="placeholder"
+                    android:padding="6dp" />
+
+                <TextView
+                    android:id="@+id/til"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="Til:" />
+
+                <TextView
+                    android:id="@+id/tilInfo"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="placeholder"
+                    android:padding="6dp" />
+
+                <TextView
+                    android:id="@+id/fraTid"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="Avreise:" />
+
+                <TextView
+                    android:id="@+id/fraTidInfo"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="placeholder"
+                    android:padding="6dp" />
+
+                <TextView
+                    android:id="@+id/tilTid"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="Ankomst:" />
+
+                <TextView
+                    android:id="@+id/tilTidInfo"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="placeholder"
+                    android:padding="6dp" />
+
+                <TextView
+                    android:id="@+id/kjenteStopp"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="Stopp:" />
+
+                <TextView
+                    android:id="@+id/kjenteStoppInfo"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="placeholder"
+                    android:padding="6dp" />
+
+                <TextView
+                    android:id="@+id/antallLedig"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="Ledig plass:" />
+
+                <TextView
+                    android:id="@+id/antallLedigInfo"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="placeholder"
+                    android:padding="6dp" />
+            </GridLayout>
+        </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/infoKjøretøy"
+        style="@style/TextAppearance.AppCompat.Subhead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reiseLayout"
+        android:text="Informasjon om kjøretøy:" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/kjøretøyLayout"
+            android:layout_below="@+id/infoKjøretøy"
+            android:paddingBottom="6dp">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="4"
+                android:rowCount="3">
+
+                <TextView
+                    android:id="@+id/merke"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="Merke:" />
+
+                <TextView
+                    android:id="@+id/merkeInfo"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="placeholder"
+                    android:padding="6dp" />
+
+                <TextView
+                    android:id="@+id/modell"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="Til:" />
+
+                <TextView
+                    android:id="@+id/modellInfo"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="placeholder"
+                    android:padding="6dp" />
+
+                <TextView
+                    android:id="@+id/årsmodell"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="Årsmodell:" />
+
+                <TextView
+                    android:id="@+id/årsmodellInfo"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="placeholder"
+                    android:padding="6dp" />
+
+                <TextView
+                    android:id="@+id/sykkelfeste"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="Sykkelfeste:" />
+
+                <TextView
+                    android:id="@+id/sykkelfesteInfo"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="placeholder"
+                    android:padding="6dp" />
+
+                <TextView
+                    android:id="@+id/takboks"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="Takboks:" />
+
+                <TextView
+                    android:id="@+id/takboksInfo"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="placeholder"
+                    android:padding="6dp" />
+            </GridLayout>
+        </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sjåfør"
+        style="@style/TextAppearance.AppCompat.Subhead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kjøretøyLayout"
+        android:text="Kontaktinfo til sjåfør:" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sjåførLayout"
+            android:layout_below="@+id/sjåfør"
+            >
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="4"
+                android:rowCount="3">
+
+                <TextView
+                    android:id="@+id/navnSjåfør"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="Navn:" />
+
+                <TextView
+                    android:id="@+id/navnSjåførInfo"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="placeholder"
+                    android:padding="6dp" />
+
+                <TextView
+                    android:id="@+id/tlf"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="Telefon nr:" />
+
+                <TextView
+                    android:id="@+id/tlfInfo"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="placeholder"
+                    android:padding="6dp" />
+
+                <TextView
+                    android:id="@+id/epost"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="Epost:" />
+
+                <TextView
+                    android:id="@+id/epostInfo"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="placeholder"
+                    android:padding="6dp" />
+            </GridLayout>
+        </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nyPassasjer"
+        android:layout_alignParentBottom="true"
+        android:text="Registrere deg på denne reisen"/>
+
+
+
+</RelativeLayout>

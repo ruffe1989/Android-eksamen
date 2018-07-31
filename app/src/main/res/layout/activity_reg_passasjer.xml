@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="no.usn.kandidatnr1.eksamenapplikasjonsutvikling2018.RegTurActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/regBilde"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridReise"
+        android:layout_below="@+id/reisebilde"
+        android:columnCount="3"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:id="@+id/regTittel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/regTittel"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:layout_columnSpan="3"
+            android:layout_gravity="center"
+            />
+
+
+        <TextView
+            android:id="@+id/regStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reg_kjent_stopp"
+            />
+
+        <EditText
+            android:id="@+id/valgtStopp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="14"
+            android:inputType="time"
+            android:hint="@string/reg_stopp_input"
+            android:layout_columnSpan="2"
+            />
+
+        <TextView
+            android:id="@+id/senestTid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/senest_tidspunkt"
+            />
+
+        <EditText
+            android:id="@+id/valgtTid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="14"
+            android:hint="@string/reg_ankomst"
+            android:inputType="time"
+            android:clickable="true"
+            android:layout_columnSpan="2"
+            android:focusable="false" />
+
+
+    </GridLayout>
+    <Button
+        android:id="@+id/regStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/regStart"
+
+        />
+</RelativeLayout>

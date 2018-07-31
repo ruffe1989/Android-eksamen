@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Samkjøring USN</string>
+    <string name="title_activity_registrer_tur">RegistrerTur</string>
+
+    <string name="ENDPOINT">http://kingbingfuji.synology.me/kandidat1api.php/</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="signUp">Har du ikke bruker? Trykk her..</string>
+    <string name="signIn">Logg inn</string>
+    <string name="passord_hint">Skriv inn passord</string>
+    <string name="epost_hint">Skriv inn epost</string>
+    <string name="navn_hint">Skriv inn navn</string>
+    <string name="gjenta_passord">Gjenta passord</string>
+    <string name="ny_bruker">Lag ny bruker</string>
+    <string name="feil_navn">Navnet må være lengre enn 3 bokstaver</string>
+    <string name="feil_epost">Dette er ikke gyldig epost</string>
+    <string name="feil_gjenta">Passord samsvarer ikke</string>
+    <string name="feil_passord_lengde">Passord må være lengre en 4 tegn</string>
+    <string name="feil_funket_ikke">Oj noe gikk galt!</string>
+    <string name="tlf_hint">Skriv inn telefon nummer</string>
+    <string name="feil_tlf">Telefon nummer må være 8 tall</string>
+    <string name="main_tittel">Samkjøring</string>
+    <string name="reg_sjåfør">Bli sjåfør</string>
+    <string name="hente_hint">Skriv inn ønsket hentested</string>
+    <string name="ankomst_hint">Velg senest ankomsttid (format: TT:mm)</string>
+    <string name="mine_reiser">Mine Reiser</string>
+    <string name="search_comment">For mer info trykk på reisen</string>
+    <string name="search_info">Skriv inn ønsket reisemål</string>
+    <string name="liste_dato">Dato</string>
+    <string name="liste_fra">Fra:</string>
+    <string name="placeholder">placeholder</string>
+    <string name="liste_til">Til:</string>
+    <string name="liste_avreise">Avreise:</string>
+    <string name="liste_ankomst">Ankomst:</string>
+    <string name="liste_stopp">Stopp:</string>
+    <string name="liste_ledig_plass">Ledig plass:</string>
+    <string name="reg_kjent_stopp">Kjent stopp:</string>
+    <string name="reg_stopp_input">Skriv inn kjent stopp i ruten</string>
+    <string name="senest_tidspunkt">Senest tidspunkt:</string>
+    <string name="reg_ankomst">Velg senest tid for ankomst</string>
+    <string name="regTittel">Vi mangler litt informasjon</string>
+    <string name="regStart">Gjennomfør registrering</string>
+    <string name="finn_mine_reiser">Finn mine reiser</string>
+    <string name="blisjåfør">Trykk på bildet for å bli sjåfør</string>
+    <string name="sjåførbtn">Bli sjåfør</string>
+</resources>

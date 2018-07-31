@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="no.usn.kandidatnr1.eksamenapplikasjonsutvikling2018.FinnReiseActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchInfo"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:text="@string/search_info"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchTur"
+        android:ems="14"
+        android:inputType="textCapSentences"
+        android:layout_below="@id/searchInfo"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchBtn"
+        android:layout_toEndOf="@id/searchTur"
+        android:layout_below="@id/searchInfo"
+        android:src="@android:drawable/ic_menu_search"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchKommentar"
+        android:layout_below="@+id/searchTur"
+        android:text="@string/search_comment"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/turListe"
+        android:layout_below="@+id/searchKommentar" />
+</RelativeLayout>
